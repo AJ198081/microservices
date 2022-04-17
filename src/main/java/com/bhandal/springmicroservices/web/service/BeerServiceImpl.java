@@ -24,4 +24,15 @@ public class BeerServiceImpl implements BeerService {
                 .id(UUID.randomUUID())
                 .build();
     }
+
+    @Override
+    public BeetDto updateBeer(UUID beerId, BeetDto beetDto) {
+
+        return null;
+    }
+
+    @Override
+    public void deleteBeerById(UUID beerId) {
+        //TODO: delete Beer
+    }
 }
