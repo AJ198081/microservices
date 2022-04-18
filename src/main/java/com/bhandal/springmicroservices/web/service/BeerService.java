@@ -1,15 +1,15 @@
 package com.bhandal.springmicroservices.web.service;
 
-import com.bhandal.springmicroservices.web.model.BeetDto;
+import com.bhandal.springmicroservices.web.model.BeerDto;
 
 import java.util.UUID;
 
 public interface BeerService {
-    BeetDto getBeerById(UUID beerId);
+    BeerDto getBeerById(UUID beerId);
 
-    BeetDto saveBeerDto(BeetDto beetDto);
+    BeerDto saveBeerDto(BeerDto beerDto);
 
-    BeetDto updateBeer(UUID beerId, BeetDto beetDto);
+    BeerDto updateBeer(UUID beerId, BeerDto beerDto);
 
     void deleteBeerById(UUID beerId);
 }

@@ -1,6 +1,6 @@
 package com.bhandal.springmicroservices.web.service;
 
-import com.bhandal.springmicroservices.web.model.BeetDto;
+import com.bhandal.springmicroservices.web.model.BeerDto;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -9,8 +9,8 @@ import java.util.UUID;
 public class BeerServiceImpl implements BeerService {
 
     @Override
-    public BeetDto getBeerById(UUID beerId) {
-        return BeetDto.builder()
+    public BeerDto getBeerById(UUID beerId) {
+        return BeerDto.builder()
                 .id(UUID.randomUUID())
                 .beerName("Galaxy Cat")
                 .beerStyle("Pale Ale")
@@ -19,14 +19,14 @@ public class BeerServiceImpl implements BeerService {
     }
 
     @Override
-    public BeetDto saveBeerDto(BeetDto beetDto) {
-        return BeetDto.builder()
+    public BeerDto saveBeerDto(BeerDto beerDto) {
+        return BeerDto.builder()
                 .id(UUID.randomUUID())
                 .build();
     }
 
     @Override
-    public BeetDto updateBeer(UUID beerId, BeetDto beetDto) {
+    public BeerDto updateBeer(UUID beerId, BeerDto beerDto) {
 
         return null;
     }
